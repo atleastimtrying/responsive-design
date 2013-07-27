@@ -8,3 +8,14 @@ html{
   font-size:24px;
   color:#3e606f;
 }
+body{
+  padding:24px;
+}
+footer{
+  position:fixed;
+  bottom:0;
+  right:0;
+
+  text-align: right;
+  padding:24px;
+}
