@@ -22,7 +22,7 @@
           <button class="small">Small</button>
         </nav>
         <h2>What is responsive design?</h2>
-        design responsively, play with the browser and respond to what it shows you.
+        <p>design responsively, play with the browser and respond to what it shows you.</p>
       </section>
       <section>
         <nav>
@@ -31,10 +31,19 @@
           <button class="small">Small</button>
         </nav>
         <h2>CSS Columns</h2>
-- great response to tight measures
-- fallback isnt too terrible
-- allows for interesting flow of document.
-- dont let columns get too long
+        <p>
+          - great response to tight measures
+          - fallback isnt too terrible
+          - allows for interesting flow of document.
+          - dont let columns get too long
+        </p>
+        <div class="columns">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
       </section>
       <section>
         <nav>
@@ -43,8 +52,10 @@
           <button class="small">Small</button>
         </nav>
         <h2>expect every element to scale</h2>
-padding, line heights, measure of blocks of text.
-I think of a page as a collection of UI elements each responding in their own way. I&rsquo;ve foudn this easier and more prgamatic, esp when you are starting ot have more unexpected pages.
+        <p>
+          padding, line heights, measure of blocks of text.
+          I think of a page as a collection of UI elements each responding in their own way. I&rsquo;ve foudn this easier and more prgamatic, esp when you are starting ot have more unexpected pages.
+        </p>
       </section>
       <section>
         <nav>
@@ -53,10 +64,12 @@ I think of a page as a collection of UI elements each responding in their own wa
           <button class="small">Small</button>
         </nav>
         <h2>use display inline-block</h2>
-        - font size 0 hack
-        - expect boxes to scale
-        - set to block on mobile
-        - vertical-align: top;
+        <p>
+          - font size 0 hack
+          - expect boxes to scale
+          - set to block on mobile
+          - vertical-align: top;
+        </p>
         <div class="inline-block-holder">
           <div class="inline-block"></div>
           <div class="inline-block"></div>
@@ -79,10 +92,12 @@ I think of a page as a collection of UI elements each responding in their own wa
           <button class="small">Small</button>
         </nav>
         <h2>use background images</h2>
-        - allows you to scale with css + media queries
-        - background size:cover;
-        - background-position:center;
-        - great support.
+        <p>
+          - allows you to scale with css + media queries
+          - background size:cover;
+          - background-position:center;
+          - great support.
+        </p>
         <div class="background-image"></div>
       </section>
       <section>
@@ -92,8 +107,40 @@ I think of a page as a collection of UI elements each responding in their own wa
           <button class="small">Small</button>
         </nav>
         <h2>use semantic grouping</h2>
-        wrap blocks of information into divs even if they arent used at some sizes, having them grouped In this way will be helpful.
-        dont be afraid of rtl, allows for more interesting layouts (e.g left items being underneath right items later on).
+        <p>
+          wrap blocks of information into divs even if they arent used at some sizes, having them grouped In this way will be helpful.
+          dont be afraid of rtl, allows for more interesting layouts (e.g left items being underneath right items later on).
+        </p>
+        <div class="semantic-group">
+          <h3>CSS</h3>
+          <ul>
+            <li>display:block;</li>
+            <li>font-size:16x;</li>
+            <li>color:#333;</li>
+            <li>border-radius:2px;</li>
+            <li>padding:16px;</li>
+          </ul>
+        </div>
+        <div class="semantic-group">
+          <h3>JS</h3>
+          <ul>
+            <li>document.ready();</li>
+            <li>document.queryselector();</li>
+            <li>arr.foreach();</li>
+            <li>el.className = 'foo';</li>
+            <li>el.style.display = 'none';</li>
+          </ul>
+        </div>
+        <div class="semantic-group">
+          <h3>HTML</h3>
+          <ul>
+            <li>&lt;title&gt;&lt;/title&gt;</li>
+            <li>&lt;header&gt;&lt;/header&gt;</li>
+            <li>&lt;article&gt;&lt;/article&gt;</li>
+            <li>&lt;section&gt;&lt;/section&gt;</li>
+            <li>&lt;footer&gt;&lt;/footer&gt;</li>
+          </ul>
+        </div>
       </section>
       <section>
         <nav>
@@ -102,10 +149,12 @@ I think of a page as a collection of UI elements each responding in their own wa
           <button class="small">Small</button>
         </nav>
         <h2>I avoid floats</h2>
-        - they are tricky
-- require clear fixes
-- seem like a hack to me
-- floating eveything loses the natural flow of the document
+        <p>
+          - they are tricky
+          - require clear fixes
+          - seem like a hack to me
+          - floating eveything loses the natural flow of the document
+        </p>
       </section>
       <section>
         <nav>
@@ -114,7 +163,9 @@ I think of a page as a collection of UI elements each responding in their own wa
           <button class="small">Small</button>
         </nav>
         <h2>display tablerow/cell</h2>
-makes for convenient table layouts
+        <p>
+          makes for convenient table layouts
+        </p>
         <div class="tr">
           <div class="td">Cell 1</div>
           <div class="td">Cell 2</div>
@@ -138,7 +189,9 @@ makes for convenient table layouts
           <button class="small">Small</button>
         </nav>
         <h2>Whitespace</h2>
-when you get to mobile reduce white space, that means padding + margins + images. but NOT font size or line height
+        <p>
+          when you get to mobile reduce white space, that means padding + margins + images. but NOT font size or line height
+        </p>
       </section>
       <section>
         <nav>
@@ -147,9 +200,11 @@ when you get to mobile reduce white space, that means padding + margins + images
           <button class="small">Small</button>
         </nav>
         <h2>JS</h2>
-window.innerWidth for js feature detection
+        <p>
+          window.innerWidth for js feature detection
 
-avoid using too much JS
+          avoid using too much JS
+        </p>
       </section>
       <section>
         <nav>
@@ -158,7 +213,9 @@ avoid using too much JS
           <button class="small">Small</button>
         </nav>
         <h2>Retina Displays</h2>
-use vectors/icon fonts where possible. scale your images with CSS
+        <p>
+          use vectors/icon fonts where possible. scale your images with CSS
+        </p>
       </section>
       <section>
         <nav>
@@ -167,10 +224,12 @@ use vectors/icon fonts where possible. scale your images with CSS
           <button class="small">Small</button>
         </nav>
         <h2>Text Layouts</h2>
-try not to worry about widows esp with CMS sites
-avoid br tags
-they break lines
-I don&rsquo;t use ems for sizing my fonts, I find them confusing, I&rsquo;d rather dictate which font sizes affect which bits. I can see how they would be useful though.
+        <p>
+          try not to worry about widows esp with CMS sites
+          avoid br tags
+          they break lines
+          I don&rsquo;t use ems for sizing my fonts, I find them confusing, I&rsquo;d rather dictate which font sizes affect which bits. I can see how they would be useful though.
+        </p>
       </section>
       <section>
         <nav>
@@ -179,7 +238,9 @@ I don&rsquo;t use ems for sizing my fonts, I find them confusing, I&rsquo;d rath
           <button class="small">Small</button>
         </nav>
         <h2>CSS Before/After</h2>
-use css before/ afters for pseudo elements where possible. allows elements to be ignored/removed easily within a media query
+        <p>
+          use css before/ afters for pseudo elements where possible. allows elements to be ignored/removed easily within a media query
+        </p>
       </section>
       <section>
         <nav>
@@ -188,8 +249,10 @@ use css before/ afters for pseudo elements where possible. allows elements to be
           <button class="small">Small</button>
         </nav>
         <h2>Media Queries</h2>
-I use lots of media queries to catch lots of changes within elements of the page rather than an iphone one or an ipad one.
-decide your largest and smallest sizes, respond to everything inbetween.
+        <p>
+          I use lots of media queries to catch lots of changes within elements of the page rather than an iphone one or an ipad one.
+          decide your largest and smallest sizes, respond to everything inbetween.
+        </p>
       </section>
       <section>
         <nav>
@@ -198,7 +261,9 @@ decide your largest and smallest sizes, respond to everything inbetween.
           <button class="small">Small</button>
         </nav>
         <h2>Absolute/fixed positioning</h2>
-        use absolute/fixed positioning at your peril, these do not scale well to mobile, try to think why you are using these techniques, can it be done using the normal flow of the document?
+        <p>
+          use absolute/fixed positioning at your peril, these do not scale well to mobile, try to think why you are using these techniques, can it be done using the normal flow of the document?
+        </p>
       </section>
       <section>
         <nav>
@@ -207,14 +272,18 @@ decide your largest and smallest sizes, respond to everything inbetween.
           <button class="small">Small</button>
         </nav>
         <h2>Obvious Questions</h2>
-        why not mobile first?
-people still think in terms of thedesktop, its just easier. there are less variants in mobile layouts than desktop ones. I&rsquo;ve just found it easier overall!
-
-why not a framework?
-I find frmaeworks hard to fix, I find them hard to work out just whats going on. they are fine as a starting point or for projects that have no exceptions. I have found most projects I come accross have exceptions pretty early on.
-
-but x/y/z use floats, at least they are better than tables..
-bully for them, I find floats are a horrible hack, they cause extra thinking to happen within a page when it&rsquo;s not needed. HTML has a natural vertical flow in place, using a technique like inline-block allows you describe otehr elements like an image, it fits in the flow of the document.
+        <p>
+          why not mobile first?
+          people still think in terms of thedesktop, its just easier. there are less variants in mobile layouts than desktop ones. I&rsquo;ve just found it easier overall!
+        </p>
+        <p>
+          why not a framework?
+          I find frmaeworks hard to fix, I find them hard to work out just whats going on. they are fine as a starting point or for projects that have no exceptions. I have found most projects I come accross have exceptions pretty early on.
+        </p>
+        <p>
+          but x/y/z use floats, at least they are better than tables..
+          bully for them, I find floats are a horrible hack, they cause extra thinking to happen within a page when it&rsquo;s not needed. HTML has a natural vertical flow in place, using a technique like inline-block allows you describe otehr elements like an image, it fits in the flow of the document.
+        </p>
       </section>
     </article>
     <footer>
