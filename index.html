@@ -7,13 +7,215 @@
     <meta name="apple-mobile-web-app-capable" content="yes" > 
     <meta name="apple-mobile-web-app-status-bar-style" content="black" >
     <link rel="stylesheet" href="style.css" type='text/css'>
-    <script src='floaters.js'></script>
+    <script src="jquery.js"></script>
+    <script src="script.js"></script>
   </head>
   <body>
     <header>
       <h1>Responsive Design</h1>
     </header>
     <article>
+      <section>
+        <nav>
+          <button class="full">Large</button>
+          <button class="medium">Medium</button>
+          <button class="small">Small</button>
+        </nav>
+        <h2>What is responsive design?</h2>
+        design responsively, play with the browser and respond to what it shows you.
+      </section>
+      <section>
+        <nav>
+          <button class="full">Large</button>
+          <button class="medium">Medium</button>
+          <button class="small">Small</button>
+        </nav>
+        <h2>CSS Columns</h2>
+- great response to tight measures
+- fallback isnt too terrible
+- allows for interesting flow of document.
+- dont let columns get too long
+      </section>
+      <section>
+        <nav>
+          <button class="full">Large</button>
+          <button class="medium">Medium</button>
+          <button class="small">Small</button>
+        </nav>
+        <h2>expect every element to scale</h2>
+padding, line heights, measure of blocks of text.
+I think of a page as a collection of UI elements each responding in their own way. I&rsquo;ve foudn this easier and more prgamatic, esp when you are starting ot have more unexpected pages.
+      </section>
+      <section>
+        <nav>
+          <button class="full">Large</button>
+          <button class="medium">Medium</button>
+          <button class="small">Small</button>
+        </nav>
+        <h2>use display inline-block</h2>
+        - font size 0 hack
+        - expect boxes to scale
+        - set to block on mobile
+        - vertical-align: top;
+        <div class="inline-block-holder">
+          <div class="inline-block"></div>
+          <div class="inline-block"></div>
+          <div class="inline-block"></div>
+          <div class="inline-block"></div>
+          <div class="inline-block"></div>
+          <div class="inline-block"></div>
+          <div class="inline-block"></div>
+          <div class="inline-block"></div>
+          <div class="inline-block"></div>
+          <div class="inline-block"></div>
+          <div class="inline-block"></div>
+          <div class="inline-block"></div>
+        </div>
+      </section>
+      <section>
+        <nav>
+          <button class="full">Large</button>
+          <button class="medium">Medium</button>
+          <button class="small">Small</button>
+        </nav>
+        <h2>use background images</h2>
+        - allows you to scale with css + media queries
+        - background size:cover;
+        - background-position:center;
+        - great support.
+        <div class="background-image"></div>
+      </section>
+      <section>
+        <nav>
+          <button class="full">Large</button>
+          <button class="medium">Medium</button>
+          <button class="small">Small</button>
+        </nav>
+        <h2>use semantic grouping</h2>
+        wrap blocks of information into divs even if they arent used at some sizes, having them grouped In this way will be helpful.
+        dont be afraid of rtl, allows for more interesting layouts (e.g left items being underneath right items later on).
+      </section>
+      <section>
+        <nav>
+          <button class="full">Large</button>
+          <button class="medium">Medium</button>
+          <button class="small">Small</button>
+        </nav>
+        <h2>I avoid floats</h2>
+        - they are tricky
+- require clear fixes
+- seem like a hack to me
+- floating eveything loses the natural flow of the document
+      </section>
+      <section>
+        <nav>
+          <button class="full">Large</button>
+          <button class="medium">Medium</button>
+          <button class="small">Small</button>
+        </nav>
+        <h2>display tablerow/cell</h2>
+makes for convenient table layouts
+        <div class="tr">
+          <div class="td">Cell 1</div>
+          <div class="td">Cell 2</div>
+        </div>
+        <div class="tr">
+          <div class="td">Cell 1</div>
+          <div class="td">Cell 2</div>
+          <div class="td">Cell 3</div>
+        </div>
+        <div class="tr">
+          <div class="td">Cell 1</div>
+          <div class="td">Cell 2</div>
+          <div class="td">Cell 3</div>
+          <div class="td">Cell 4</div>
+        </div>
+      </section>
+      <section>
+        <nav>
+          <button class="full">Large</button>
+          <button class="medium">Medium</button>
+          <button class="small">Small</button>
+        </nav>
+        <h2>Whitespace</h2>
+when you get to mobile reduce white space, that means padding + margins + images. but NOT font size or line height
+      </section>
+      <section>
+        <nav>
+          <button class="full">Large</button>
+          <button class="medium">Medium</button>
+          <button class="small">Small</button>
+        </nav>
+        <h2>JS</h2>
+window.innerWidth for js feature detection
+
+avoid using too much JS
+      </section>
+      <section>
+        <nav>
+          <button class="full">Large</button>
+          <button class="medium">Medium</button>
+          <button class="small">Small</button>
+        </nav>
+        <h2>Retina Displays</h2>
+use vectors/icon fonts where possible. scale your images with CSS
+      </section>
+      <section>
+        <nav>
+          <button class="full">Large</button>
+          <button class="medium">Medium</button>
+          <button class="small">Small</button>
+        </nav>
+        <h2>Text Layouts</h2>
+try not to worry about widows esp with CMS sites
+avoid br tags
+they break lines
+I don&rsquo;t use ems for sizing my fonts, I find them confusing, I&rsquo;d rather dictate which font sizes affect which bits. I can see how they would be useful though.
+      </section>
+      <section>
+        <nav>
+          <button class="full">Large</button>
+          <button class="medium">Medium</button>
+          <button class="small">Small</button>
+        </nav>
+        <h2>CSS Before/After</h2>
+use css before/ afters for pseudo elements where possible. allows elements to be ignored/removed easily within a media query
+      </section>
+      <section>
+        <nav>
+          <button class="full">Large</button>
+          <button class="medium">Medium</button>
+          <button class="small">Small</button>
+        </nav>
+        <h2>Media Queries</h2>
+I use lots of media queries to catch lots of changes within elements of the page rather than an iphone one or an ipad one.
+decide your largest and smallest sizes, respond to everything inbetween.
+      </section>
+      <section>
+        <nav>
+          <button class="full">Large</button>
+          <button class="medium">Medium</button>
+          <button class="small">Small</button>
+        </nav>
+        <h2>Absolute/fixed positioning</h2>
+        use absolute/fixed positioning at your peril, these do not scale well to mobile, try to think why you are using these techniques, can it be done using the normal flow of the document?
+      </section>
+      <section>
+        <nav>
+          <button class="full">Large</button>
+          <button class="medium">Medium</button>
+          <button class="small">Small</button>
+        </nav>
+        <h2>Obvious Questions</h2>
+        why not mobile first?
+people still think in terms of thedesktop, its just easier. there are less variants in mobile layouts than desktop ones. I&rsquo;ve just found it easier overall!
+
+why not a framework?
+I find frmaeworks hard to fix, I find them hard to work out just whats going on. they are fine as a starting point or for projects that have no exceptions. I have found most projects I come accross have exceptions pretty early on.
+
+but x/y/z use floats, at least they are better than tables..
+bully for them, I find floats are a horrible hack, they cause extra thinking to happen within a page when it&rsquo;s not needed. HTML has a natural vertical flow in place, using a technique like inline-block allows you describe otehr elements like an image, it fits in the flow of the document.
+      </section>
     </article>
     <footer>
       <a href='http://twitter.com/atleastimtrying'>@atleastimtrying</a>
