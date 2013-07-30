@@ -52,13 +52,20 @@ h2{
   line-height: 48px;
   margin-bottom: 16px;
 }
+h3{
+  font-size: 32px;
+  line-height: 32px;
+  margin-bottom: 8px;
 
-p{
-  font-size: 16px;
-  line-height: 16px;
-  margin-bottom: 16px;
 }
-
+p{
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+ul{
+  margin-bottom:24px;
+}
 li{
   font-size:24px;
   margin-bottom:8px;
@@ -70,22 +77,23 @@ pre{
   color:white;
 }
 body{
-  padding:24px;
+  padding:24px 16px;
 }
 
 section{
   position:relative;
   overflow-y: scroll;
-  border:3px solid #efefef;
-  padding:13px;
+  border:48px solid #666;
+  padding:16px;
   margin-bottom:24px;
   border-radius:2px;
-  width:1100px;
   transition:width 1s ease-out;
-  height:600px;
+  max-height:600px;
+  width:1100px;
+  margin: 0 auto 32px auto;
 }
 
-section.large{
+section.full{
   width:1100px;
 }
 
@@ -152,7 +160,7 @@ div.background-image{
   background-position: center;
   background-image:url(img/minions.jpg);
   width:100%;
-  height:400px;
+  height:300px;
 }
 
 div.tr{
@@ -177,6 +185,10 @@ div.td:nth-child(even){
 div.columns{
   -webkit-column-count:3;
 }
+div.columns p{
+  font-size:16px;
+  line-height: 16px;
+}
 
 .small div.columns{
   -webkit-column-count:1;
@@ -192,10 +204,10 @@ div.retina-displays img{
   padding:4px;
 }
 .medium div.retina-displays{
-  zoom:2;
+  zoom:4;
 }
 .small div.retina-displays{
-  zoom:4;
+  zoom:2;
 }
 
 div.whitespace{
@@ -235,6 +247,84 @@ div.whitespace section p{
 }
 .small div.whitespace section p{
   margin-bottom:4px;
+}
+
+div.before:before{
+  height:0;
+  content: "";
+  border-bottom:5px dashed black;
+  margin-bottom:8px;
+  display:block;
+}
+
+.medium div.before:before{
+  float:left;
+  width:40px;
+  height:40px;
+  background:#ccc;
+  border-radius:50%;
+  border-top-right-radius:0;
+  border:0;
+  margin-right:8px;
+  display:inline-block;
+}
+
+.medium div.before{
+  display:inline-block;
+}
+
+.small div.before:before{
+  border:0;
+  height:1px;
+  box-shadow:0 0 4px #ccc;
+}
+
+div.semantic-group{
+  display:inline-block;
+  direction:ltr;
+}
+div.semantic-group li{
+  font-size:16px;
+}
+.large div.semantic-container{
+  direction:rtl;
+}
+.large div.semantic-group{
+  width:330px;
+}
+.medium div.semantic-group:nth-child(3){
+  display:block;
+}
+p.text-layout{
+  font-size:24px;
+  line-height:30px;
+  padding:24px;
+  border: 1px solid #ccc;
+}
+
+blockquote{
+  display:block;
+  padding:23px 48px;
+  background:#ccc;
+  border:1px solid #333;
+  border-radius:4px;
+  position:relative;
+}
+blockquote:before,
+blockquote:after{
+  content:'"';
+  position:absolute;
+  top:16px;
+  left:16px;
+  font-size:40px;
+  font-family:sans-serif;
+}
+
+blockquote:after{
+  top:auto;
+  left:auto;
+  bottom:16px;
+  right:16px;
 }
 
 

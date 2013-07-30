@@ -1,5 +1,5 @@
 $(function(){
   $('button').click(function(){
-    $(this).parents('section')[0].className = this.className
+    $(this).parents('section')[0].className = this.className;
   });
 });
